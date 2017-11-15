@@ -2,10 +2,11 @@
 
 args="$1";
 name="$2";
+base_path="/home/agaust/.pgen"
 templates_path="/home/agaust/.pgen/templates"
 
-# print help if whithout arguments
-if [[ $# -eq 0 ]] ; then
+# print help
+if [[ $# -eq 0 ]] || [ $args == '-h' ] || [ $args == 'help' ]; then
   echo "
   >_ pgen (Project Generator)
 
@@ -20,6 +21,16 @@ if [[ $# -eq 0 ]] ; then
   $ pgen.sh plugin myplugin
   ";
   exit 1
+fi
+
+# setup pgen as to terminal shortcut command
+if [ $args == '-i' ] || [ $args == 'install' ]; then
+  echo "installing pgen...";
+  rsync -av --exclude='demo/' --exclude='.git/' . $base_path;
+  echo "";
+  echo "creating a bin..."
+  sudo cp pgen.sh /bin/pgen;
+  echo "pgen successfully installed..."
 fi
 
 # create a django project

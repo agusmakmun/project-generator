@@ -1,20 +1,37 @@
+pgen - (Project Generator)
+===========================
 
-* Edit the template files if it needed.
-* Edit `templates_path` inside `pgen.sh`.
-* Copy this files into `/home/username/.pgen/` or `~/.pgen/` with following:
+> Project generator to generate some files or directories
+> used for Django project or Pypi project.
 
-```
-/home/username/.pgen/
-/home/username/.pgen/pgen.sh
-/home/username/.pgen/templates/.pypirc
-/home/username/.pgen/templates/.gitignore
-/home/username/.pgen/templates/MANIFEST.in
-/home/username/.pgen/templates/LICENSE
-/home/username/.pgen/templates/push.sh
-```
 
-* Creating alias into `/home/username/.bashrc` or `~/.bashrc`:
+Install
+---------
+
+1.
+2. Edit the `templates/` files if it needed.
+3. Edit `base_path` and `templates_path` inside `pgen.sh`.
+4. Setup installation which following this command:
 
 ```
-alias pgen="~/.pgen/pgen.sh"
+./pgen.sh -i
+
+# or
+
+./pgen.sh install
+```
+
+
+Usage
+---------
+
+```
+$ pgen -h                   # print help
+$ pgen help                 # print help
+
+$ pgen -p projectname       # create a djano project with virtualenv
+$ pgen project projectname  # or command
+
+$ pgen -l pluginname        # create a plugin project for pypi
+$ pgen plugin pluginname    # or command
 ```

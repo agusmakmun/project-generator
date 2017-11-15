@@ -42,7 +42,7 @@ if [ $args == "-p" ] || [ $args == "project" ]; then
   pip install Django;
   django-admin startproject $name;
 
-  cp $templates_path/.gitignore $name;
+  cp $templates_path/gitignore $name/.gitignore;
   cp $templates_path/LICENSE $name;
   cp $templates_path/push.sh $name;
 
@@ -57,8 +57,8 @@ if [ $args == "-l" ] || [ $args == "plugin" ]; then
   cd env-$name && source bin/activate;
   mkdir -p $name/$name;
 
-  cp $templates_path/.pypirc $name;
-  cp $templates_path/.gitignore $name;
+  cp $templates_path/pypirc $name/.pypirc;
+  cp $templates_path/gitignore $name/.gitignore;
   cp $templates_path/MANIFEST.in $name;
   cp $templates_path/LICENSE $name;
   cp $templates_path/push.sh $name;

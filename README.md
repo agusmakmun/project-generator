@@ -9,7 +9,7 @@ Install
 ---------
 
 1. Clone or download this project.
-2. Edit the `templates/` files if it needed.
+2. Edit the `templates/` like `pypirc`, author of `LICENSE`, etc.
 3. Edit `base_path` and `templates_path` inside `pgen.sh`.
 4. Setup installation which following this command:
 

@@ -27,11 +27,11 @@ Usage
 
 ```
 $ pgen -h                   # print help
-$ pgen help                 # print help
+$ pgen help                 # or
 
 $ pgen -p projectname       # create a djano project with virtualenv
-$ pgen project projectname  # or command
+$ pgen project projectname  # or
 
 $ pgen -l pluginname        # create a plugin project for pypi
-$ pgen plugin pluginname    # or command
+$ pgen plugin pluginname    # or
 ```

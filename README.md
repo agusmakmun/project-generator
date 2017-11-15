@@ -8,7 +8,7 @@ pgen - (Project Generator)
 Install
 ---------
 
-1.
+1. Clone or download this project.
 2. Edit the `templates/` files if it needed.
 3. Edit `base_path` and `templates_path` inside `pgen.sh`.
 4. Setup installation which following this command:

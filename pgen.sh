@@ -47,7 +47,9 @@ if [ $args == "-p" ] || [ $args == "project" ]; then
   cp $templates_path/push.sh $name;
 
   cd $name && git init . && echo $name > README.md;
-  pip freeze > requirements.txt
+  pip freeze > requirements.txt;
+
+  echo "successfully created django project in 'env-$name'";
 fi
 
 # create a django plugin
@@ -66,4 +68,6 @@ if [ $args == "-l" ] || [ $args == "plugin" ]; then
   cd $name && git init . && echo $name > README.md;
   pip freeze > requirements.txt;
   echo '' > $name/__init__.py;
+
+  echo "successfully created pypi project in 'env-$name'";
 fi

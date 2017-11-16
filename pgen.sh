@@ -23,7 +23,7 @@ if [[ $# -eq 0 ]] || [ $args == '-h' ] || [ $args == 'help' ]; then
   exit 1
 fi
 
-# setup pgen as to terminal shortcut command
+# install pgen as to terminal shortcut command
 if [ $args == '-i' ] || [ $args == 'install' ]; then
   echo "installing pgen...";
   rsync -av --exclude='demo/' --exclude='.git/' . $base_path;

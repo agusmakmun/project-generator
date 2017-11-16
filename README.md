@@ -29,7 +29,7 @@ Usage
 $ pgen -h                   # print help
 $ pgen help                 # or
 
-$ pgen -p projectname       # create a djano project with virtualenv
+$ pgen -p projectname       # create a django project with virtualenv
 $ pgen project projectname  # or
 
 $ pgen -l pluginname        # create a pypi project with virtualenv

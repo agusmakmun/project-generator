@@ -10,15 +10,15 @@ if [[ $# -eq 0 ]] || [ $args == '-h' ] || [ $args == 'help' ]; then
   echo "
   >_ pgen (Project Generator)
 
-  $ pgen.sh <type> <project_name>
+  $ pgen <type> <project_name>
 
   * create a django project
-  $ pgen.sh -p myjangoproject
-  $ pgen.sh project mydjangoproject
+  $ pgen -p myjangoproject
+  $ pgen project mydjangoproject
 
   * create a python plugin
-  $ pgen.sh -l myplugin
-  $ pgen.sh plugin myplugin
+  $ pgen -l myplugin
+  $ pgen plugin myplugin
   ";
   exit 1
 fi
